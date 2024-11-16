@@ -67,7 +67,7 @@ export function ComputeModel({
     try {
       const score = await getReputationScore({
         developerAttestation: selectedDeveloper,
-        modelAddressToUse: '0x8438099af223473965d506ad72ce301a2f319a8f',
+        modelAddressToUse: '0xc4215fd017151bd9e725b2bb03d2eb9cd0bf1704', //TODO: use the chosen reputable model
       })
       clearInterval(interval)
       setComputationProgress(100)
