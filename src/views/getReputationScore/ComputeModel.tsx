@@ -150,28 +150,6 @@ export function ComputeModel({
           </div>
         )}
 
-        <div className="mb-6 mt-40 flex items-center justify-center">
-          <div className="flex flex-col items-center">
-            <User className="mb-2 h-12 w-12 text-primary" />
-            <p className="text-sm font-medium">Developer</p>
-          </div>
-          <div className="h-0.5 w-16 bg-gray-300" />
-          <div className="flex flex-col items-center">
-            <FileText className="mb-2 h-12 w-12 text-primary" />
-            <p className="text-sm font-medium">Attestation</p>
-          </div>
-          <div className="h-0.5 w-16 bg-gray-300" />
-          <div className="relative flex flex-col items-center">
-            <Calculator className="mb-2 h-12 w-12 text-primary" />
-            <p className="text-sm font-medium">Computation</p>
-            <div className="absolute -top-44 left-1/2 flex -translate-x-1/2 flex-col items-center">
-              <Award className="mb-2 h-12 w-12 text-primary" />
-              <p className="whitespace-nowrap text-sm font-medium">Reputation Model</p>
-              <div className="mt-2 h-12 w-0.5 bg-gray-300" />
-            </div>
-          </div>
-        </div>
-
         {computationProgress > 0 && (
           <div className="mb-4">
             <Progress value={computationProgress} className="w-full" />
@@ -180,16 +158,6 @@ export function ComputeModel({
             </p>
           </div>
         )}
-
-        <div className="flex justify-center">
-          <div className="overflow-hidden rounded-full border-4 border-primary">
-            <img
-              src="https://www.thoughtwin.com/assets/img/blockchain.gif"
-              alt="Blockchain computation visualization"
-              className="h-[200px] w-[200px] object-cover"
-            />
-          </div>
-        </div>
       </CardContent>
       <CardFooter>
         <Button

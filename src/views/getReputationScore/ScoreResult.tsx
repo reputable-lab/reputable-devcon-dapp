@@ -2,7 +2,7 @@
 
 import { useMutation } from '@tanstack/react-query'
 import { Loader2, ExternalLink, Check, Github } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
 import { useUserStore } from '@/stores/user.store'
